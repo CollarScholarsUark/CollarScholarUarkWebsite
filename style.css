@@ -857,7 +857,6 @@ footer p{
 .card:hover .card-inner{
     transform: translate(60px) rotateY(180deg); 
     transform-origin: center; 
-    
 }
 
 /*Support*/
@@ -927,6 +926,7 @@ footer p{
     gap: 3rem;
     padding: 4rem 2rem;
     background: linear-gradient(135deg, #f5faff, #ffffff);
+    
   }
   
   .info-container {
@@ -938,6 +938,7 @@ footer p{
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 75px;
+    animation: fadeIn 0.8s ease-out;
   }
   
   .info-container:hover {
