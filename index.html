@@ -15,20 +15,18 @@
 
     <body>
         <header role="banner">
-            <!-- Navigation at top of page that will take the user to sections of the webpage-->
-         <nav id="desktop-nav">
-             <div class="logo"><img src="./assets/logo.png" alt="Collar Scholars Logo"></div>
-             <div>
-                  <!--Top of page links--> 
-                  <ul class="nav-links">
-                     <li><a href="#about" class="btn btn-container">About Us</a></li>
-                     <li><a href="involved.html" class="btn btn-container">Get Involved</a></li>
-                      <li><a href="events.html" class="btn btn-container">Events</a></li>
-                      <li><a href="raisers.html" class="btn btn-container">Raisers</a></li>
-                      <li><a href="support.html" class="donate btn btn-container ">Support</a></li>
-                    </ul>
-              </div>
-        
+            <nav id="desktop-nav" class="pretty-nav">
+                <div class="nav-logo">
+                    <img src="./assets/logo.png" alt="Collar Scholars Logo">
+                    <span class="nav-title">Collar Scholars</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="raisers.html">Raisers</a></li>
+                    <li><a href="support.html" class="highlight">Support</a></li>
+                </ul>
             </nav>
         </header>
 
@@ -59,27 +57,11 @@
 
         
         <section id="profile">
-            <!--Inserting main picture-->
-            <div class="section_pic-container">
-              <img src="./assets/groupPicture.jpg" alt="Group profile picture"> 
-            </div>
-            <div class="section__text">
-                <p class="section__text_p1"></p>
-                <h1 class="title">Collar Scholars at the University of Arkansas</h1>
-                <p class="section__text__p2">Join us in raising service dogs and changing lives—one paw at a time!</p>
-                <div class="btn-container">
-                    <!-- Button for showing resume-->
-                    <button class="btn btn-color-2" onclick="location.href=
-                    'involved.html'">Get Involved
-                    </button>
-
-                    <!--Button for sending person to contact section -->
-                    <button class="btn btn-color-1 " onclick="location.href=
-                    'support.html'">Support
-                    </button>
-                    
-                </div>
-
+            <h1 class="landing-title">Collar Scholars at the University of Arkansas</h1>
+            <p class="landing-subtitle">Join us in raising service dogs and changing lives—one paw at a time!</p>
+            <div class="landing-buttons">
+                <button class="landing-btn" onclick="location.href='involved.html'">Get Involved</button>
+                <button class="landing-btn" onclick="location.href='support.html'">Support</button>
             </div>
         </section>
 
@@ -151,7 +133,7 @@
         </section>
 
         <footer>
-            <nav id="desktop-nav">
+            <nav id="pretty-nav">
                 <div class="nav-links-container">
                     <ul class="nav-links">
                         <li><a href="#about">About</a></li>
@@ -162,7 +144,8 @@
                     </ul>
                 </div>
             </nav>
-            <p>Copyright &#169; 2024 Collar Scholars at the University of Arkansas. All Rights Reserved.</p>
+            <p> </p>
+            <!---<p>Copyright &#169; 2024 Collar Scholars at the University of Arkansas. All Rights Reserved.</p> -->
         </footer>
         <!--- Links java script file to main website-->
         <script src="script.js"> </script>

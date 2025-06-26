@@ -15,22 +15,37 @@
 
     <body>
         <header role="banner">
-            <!-- Navigation at top of page that will take the user to sections of the webpage-->
-         <nav id="desktop-nav">
-             <div class="logo"><img src="./assets/logo.png" alt="Collar Scholars Logo"></div>
-             <div>
-                  <!--Top of page links--> 
-                  <ul class="nav-links">
-                     <li><a href="index.html" class="btn btn-container">About Us</a></li>
-                     <li><a href="involved.html" class="btn btn-container">Get Involved</a></li>
-                      <li><a href="events.html" class="btn btn-container">Events</a></li>
-                      <li><a href="raisers.html" class="btn btn-container">Raisers</a></li>
-                      <li><a href="support.html" class="donate btn btn-container ">Support</a></li>
-                    </ul>
-              </div>
-        
+            <nav id="desktop-nav" class="pretty-nav">
+                <div class="nav-logo">
+                    <img src="./assets/logo.png" alt="Collar Scholars Logo">
+                    <span class="nav-title">Collar Scholars</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="raisers.html">Raisers</a></li>
+                    <li><a href="support.html" class="highlight">Support</a></li>
+                </ul>
             </nav>
         </header>
+            <div class="events-page">
+                <div class="events-wrapper">
+                  <h2 class="events-title">Upcoming Events</h2>
+                  <p class="events-description">
+                    Stay in the loop with everything Collar Scholars — from meetings to puppy socials to volunteer opportunities. 
+                    Our live calendar has all the good stuff.
+                  </p>
+              
+                  <div class="calendar-container">
+                    <iframe 
+                      src="https://calendar.google.com/calendar/embed?src=sponsor.collarscholarsuark%40gmail.com&ctz=America%2FChicago"
+                      scrolling="no">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+        
 
 
 
@@ -114,7 +129,7 @@
                     </ul>
                 </div>
             </nav>
-            <p>Copyright &#169; 2024 Collar Scholars at the University of Arkansas. All Rights Reserved.</p>
+            <!--- <p>Copyright &#169; 2024 Collar Scholars at the University of Arkansas. All Rights Reserved.</p>-->
         </footer>
         <!--- Links java script file to main website-->
         <script src="script.js"> </script>
