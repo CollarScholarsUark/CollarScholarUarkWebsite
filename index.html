@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Collar Scholars</title>
+
+        <!--- Links our 2 css style sheets to the main website-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="icon" href="./assets/favicon.jpg" type="image/png">
+    </head>
+
+    <body>
+        <header role="banner">
+            <!-- Navigation at top of page that will take the user to sections of the webpage-->
+         <nav id="desktop-nav">
+             <div class="logo"><img src="./assets/logo.png" alt="Collar Scholars Logo"></div>
+             <div>
+                  <!--Top of page links--> 
+                  <ul class="nav-links">
+                     <li><a href="#about" class="btn btn-container">About Us</a></li>
+                     <li><a href="involved.html" class="btn btn-container">Get Involved</a></li>
+                      <li><a href="events.html" class="btn btn-container">Events</a></li>
+                      <li><a href="raisers.html" class="btn btn-container">Raisers</a></li>
+                      <li><a href="support.html" class="donate btn btn-container ">Support</a></li>
+                    </ul>
+              </div>
+        
+            </nav>
+        </header>
+
+        <!--Navigation for hamburger dropdown menu-->
+        <nav id="hamburger-nav">
+            <div class="logo"><img src="./assets/logo.jpg" alt="Collar Scholars Logo"></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <!--Lines of the hamburger dropdown-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!--Links that will be openend with dropdown menu-->
+                <div class="menu-links">
+                    <!--Onclick closes hamburger when link is clicked-->
+                    <li> <a href="#about">About Us</a> </li>
+                    <li> <a href="involved.html">Get Involved</a> </li>
+                    <li> <a href="events.html">Events</a> </li>
+                    <li><a href="raisers.html" class="btn btn-container">Raisers</a></li>
+                    <li> <a href="support.html">Support</a> </li>
+                </div>
+
+            </div>
+
+
+        </nav>
+
+        
+        <section id="profile">
+            <!--Inserting main picture-->
+            <div class="section_pic-container">
+              <img src="./assets/groupPicture.jpg" alt="Group profile picture"> 
+            </div>
+            <div class="section__text">
+                <p class="section__text_p1"></p>
+                <h1 class="title">Collar Scholars at the University of Arkansas</h1>
+                <p class="section__text__p2">Join us in raising service dogs and changing lives—one paw at a time!</p>
+                <div class="btn-container">
+                    <!-- Button for showing resume-->
+                    <button class="btn btn-color-2" onclick="location.href=
+                    'involved.html'">Get Involved
+                    </button>
+
+                    <!--Button for sending person to contact section -->
+                    <button class="btn btn-color-1 " onclick="location.href=
+                    'support.html'">Support
+                    </button>
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <!--Setup for the "about" section-->
+        <section id="about">
+            
+            <h1 class="title">About Us</h1>
+            <div class="section-container">
+                <div class="about-text">
+                    <!--Text in About section-->  
+                 <p class="section__text_p3">Collar Scholars at the University of Arkansas is a registered student organization dedicated to raising and preparing future service dogs in partnership with Canine Companions, a nonprofit leader in service dog training. Our mission is to give students an opportunity to become puppy raisers, puppy sitters and general members. It also allows students to earn community service and to help educate the college community on service dogs and proper etiquette around them. Our club provides students the unique opportunity to be directly involved in the early development of these incredible dogs. Members can serve as Puppy Raisers, who nurture and teach foundational skills to the puppies before they advance to professional training; Puppy Sitters, who support Raisers by caring for the dogs when needed; or General Members, who participate in events, learn about service dog training, and contribute to our mission. Together, we aim to create a positive impact on the lives of individuals who rely on service dogs for independence and companionship.</p>
+                </div>
+
+                 <about-section-container >
+                                   <!--Picture Klancy-->
+                    <img src="./assets/about-pic.png" 
+                    alt="Profile picture" 
+                   class="about-pic"
+                   />
+                </about-section-container>
+                </div>
+
+            </div>
+
+        </section>
+        
+
+        <!--Setup for "Contacts"-->
+        <section id="contact">
+            <h1 class="title">Contact</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <a href="https://hogsync.uark.edu/csua/contact-us/" target="blank">
+                        <img
+                        src="./assets/email.webp"
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                        />
+                    </a>
+                </div>
+                <div class="contact-info-container">
+                    <a href="https://www.instagram.com/collarscholars_uark/" target="blank">
+                        <img
+                        src="./assets/instagram.webp"
+                        alt="Instagram icon"
+                        class="icon contact-icon instagram-icon"
+                        />
+                    </a>
+                </div>
+                <div class="contact-info-container">
+                    <a href="https://www.facebook.com/people/Canine-Companions-Collar-Scholars-at-UARK/61557774277922/?_rdr" target="blank">
+                        <img
+                        src="./assets/facebook.webp"
+                        alt="Facebook Icon"
+                        class="icon contact-icon facebook-icon"
+                        />
+                    </a>
+                </div>
+                <div class="contact-info-container">
+                    <a href="https://hogsync.uark.edu/csua/home/" target="blank">
+                        <img
+                        src="./assets/hogsync.webp"
+                        alt="Hogsync Icon"
+                        class="icon contact-icon hogsync-icon"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <nav id="desktop-nav">
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="involved.html">Get Involved</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="raisers.html">Raisers</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Collar Scholars at the University of Arkansas. All Rights Reserved.</p>
+        </footer>
+        <!--- Links java script file to main website-->
+        <script src="script.js"> </script>
+    </body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Collar Scholars</title>
+
+        <!--- Links our 2 css style sheets to the main website-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="icon" href="./assets/favicon.jpg" type="image/png">
+    </head>
+
+    <body>
+        <header role="banner">
+            <!-- Navigation at top of page that will take the user to sections of the webpage-->
+         <nav id="desktop-nav">
+             <div class="logo"><img src="./assets/logo.png" alt="Collar Scholars Logo"></div>
+             <div>
+                  <!--Top of page links--> 
+                  <ul class="nav-links">
+                     <li><a href="index.html" class="btn btn-container">About Us</a></li>
+                     <li><a href="involved.html" class="btn btn-container">Get Involved</a></li>
+                      <li><a href="events.html" class="btn btn-container">Events</a></li>
+                      <li><a href="raisers.html" class="btn btn-container">Raisers</a></li>
+                      <li><a href="support.html" class="donate btn btn-container ">Support</a></li>
+                    </ul>
+              </div>
+        
+            </nav>
+        </header>
+
+        <!--Navigation for hamburger dropdown menu-->
+        <nav id="hamburger-nav">
+            <div class="logo"><img src="./assets/logo.jpg" alt="Collar Scholars Logo"></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <!--Lines of the hamburger dropdown-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!--Links that will be openend with dropdown menu-->
+                <div class="menu-links">
+                    <!--Onclick closes hamburger when link is clicked-->
+                    <li> <a href="index.html">About Us</a> </li>
+                    <li> <a href="involved.html">Get Involved</a> </li>
+                    <li> <a href="events.html">Events</a> </li>
+                    <li> <a href="support.html">Support</a> </li>
+                </div>
+
+            </div>
+
+
+        </nav>
+
+
+        <section id="raiserIntro">
+
+            <h1 class="title">Raisers</h1>
+                <div class="intro_text_container">
+                    <p class="intro_text">Puppy Raisers are the heart of Collar Scholars, playing a pivotal role in shaping the future of service dogs in partnership with Canine Companions, a renowned non-profit organization that provides expertly bred puppies and comprehensive training resources. These dedicated members welcome a puppy into their lives for 12–18 months, offering love, care, and consistent training to instill foundational skills and behaviors. Raisers teach the puppies basic commands, expose them to diverse environments, and ensure they grow into confident, well-mannered dogs ready to transition to professional training with Canine Companions. This hands-on experience not only allows Raisers to directly support Canine Companions’ mission of providing life-changing service dogs free of charge but also equips them with valuable skills in leadership, responsibility, and empathy. Puppy Raisers are integral to creating brighter futures for individuals with disabilities while fostering a sense of community and purpose within Collar Scholars.</p>
+                </div>
+                <div class="btn-container">
+                    <!-- Button for showing resume-->
+                    <button class="btn btn-color-2" onclick="location.href=
+                    'https://hogsync.uark.edu/csua/contact-us/'" >Become a Raiser!
+                    </button>
+
+                    <!--Button for sending person to contact section -->
+                    <button class="btn btn-color-1 " onclick="location.href=
+                    'support.html'">Support our Raisers
+                    </button>
+                    
+                </div>
+        </section>
+
+        <section id="currentRaisers">
+
+            <h1 class="title">Current Raisers</h1>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="frontStash front">
+                        <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Caleb, Abby, & Stash</h2>
+                        <p style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Began Raising March, 2025</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="back">
+                        <img src="./assets/caninecompanionslogo.png">
+                        <h1>Caleb, Abby, & <br><span>Stash</span> </h1>
+                        <p>Meet Caleb, Abby, and Stash! Ollie, once a playful puppy in training, has now matriculated and is excelling in his professional role as a service dog. Guided by Lily’s dedication and care during his formative months, Ollie is making a meaningful impact in the lives of others, embodying the heart of our mission.</p>
+                        <div class="row">
+                            <button>Follow</button>
+                            <a href="https://www.instagram.com/stashanddash_/"><img src="./assets/instagram.webp" class="instagram"></a>
+                            <a href='https://www.facebook.com/people/Canine-Companions-Collar-Scholars-at-UARK/61557774277922/?_rdr'><img src="./assets/facebook.webp" class="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="frontFleur front">
+                            <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                            -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Lily & Fleur</h2>
+                            <p style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                            -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Began Raising May, 2025</p>
+                            <button>Learn More</button>
+                        </div>
+                        <div class="back">
+                            <img src="./assets/caninecompanionslogo.png">
+                            <h1>Lily & <br><span>Fleur</span> </h1>
+                            <p>Meet Lily and Fleur! Ollie, once a playful puppy in training, has now matriculated and is excelling in his professional role as a service dog. Guided by Lily’s dedication and care during his formative months, Ollie is making a meaningful impact in the lives of others, embodying the heart of our mission.</p>
+                            <div class="row">
+                                <button>Follow</button>
+                                <a href="https://www.instagram.com/impactfulservice/"><img src="./assets/instagram.webp" class="instagram"></a>
+                                <a href='https://www.facebook.com/people/Canine-Companions-Collar-Scholars-at-UARK/61557774277922/?_rdr'><img src="./assets/facebook.webp" class="facebook"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="frontPoke front">
+                                <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                                -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Jaina & Pokē</h2>
+                                <p style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                                -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Began Raising June, 2025</p>
+                                <button>Learn More</button>
+                            </div>
+                            <div class="back">
+                                <img src="./assets/caninecompanionslogo.png">
+                                <h1>Jaina & <br><span>Pokē</span> </h1>
+                                <p>Meet Jaina & Pokē! Ollie, once a playful puppy in training, has now matriculated and is excelling in his professional role as a service dog. Guided by Lily’s dedication and care during his formative months, Ollie is making a meaningful impact in the lives of others, embodying the heart of our mission.</p>
+                                <div class="row">
+                                    <button>Follow</button>
+                                    <a href="https://www.instagram.com/poke._.n._.poke/"><img src="./assets/instagram.webp" class="instagram"></a>
+                                    <a href='https://www.facebook.com/people/Canine-Companions-Collar-Scholars-at-UARK/61557774277922/?_rdr'><img src="./assets/facebook.webp" class="facebook"></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="pastRaisers">
+            <h1 class="title">Past Pups</h1>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="frontSydney front">
+                        <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Sydney & Chia</h2>
+                        <p style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Began Prison Program May, 2025</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="back">
+                        <img src="./assets/caninecompanionslogo.png">
+                        <h1>Sydney & <br><span>Chia</span> </h1>
+                        <p>Meet Chia and Sydney! Chia, a lively service puppy-in-training, is at the heart of our mission to raise future service dogs. With Sydney, her dedicated raiser, this duo showcases teamwork and compassion through training, campus events, and daily adventures—proving the power of making a difference, one wagging tail at a time!</p>
+                        <div class="row">
+                            <button>Follow</button>
+                            <a href="https://www.instagram.com/purposefulpups_/"><img src="./assets/instagram.webp" class="instagram"></a>
+                            <a href='https://www.facebook.com/people/Canine-Companions-Collar-Scholars-at-UARK/61557774277922/?_rdr'><img src="./assets/facebook.webp" class="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="frontWhitaker front">  
+                        <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Whitaker & Carina</h2>
+                        <p style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Matriculated May, 2025</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="back">
+                        <img src="./assets/caninecompanionslogo.png">
+                        <h1>Whitaker & <br><span>Carina</span> </h1>
+                        <p>Meet Carina and Whitaker! Carina, a curious and energetic service puppy-in-training, is flourishing under Whitaker’s dedicated guidance. Together, they tackle challenges, share unforgettable moments, and showcase the profound impact of raising service dogs for a brighter future.</p>
+                        <div class="row">
+                            <button>Follow</button>
+                            <a href="https://www.instagram.com/purposefulpups_/"><img src="./assets/instagram.webp" class="instagram"></a>
+                            <a href='https://www.facebook.com/people/Canine-Companions-Collar-Scholars-at-UARK/61557774277922/?_rdr'><img src="./assets/facebook.webp" class="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="frontLily front">  
+                        <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Lily & Klancy</h2>
+                        <p style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Graduated May, 2025</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="back">
+                        <img src="./assets/caninecompanionslogo.png">
+                        <h1>Lily & <br><span>Klancy</span> </h1>
+                        <p>Meet Klancy and Lily! Klancy, a dedicated service dog-in-training, is now excelling in professional training. Lily began his training but had to pass the leash to Michael and Michelle when she studied abroad in Rome. Klancy’s journey reflects teamwork and commitment to changing lives</p>
+                        <div class="row">
+                            <button>Follow</button>
+                            <a href="https://www.instagram.com/impactfulservice/"><img src="./assets/instagram.webp" class="instagram"></a>
+                            <a href='https://www.facebook.com/people/Canine-Companions-Collar-Scholars-at-UARK/61557774277922/?_rdr'><img src="./assets/facebook.webp" class="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="frontOllie front">
+                        <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Lily & Ollie</h2>
+                        <p style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                        -1px 1px 0 #000, 1px 1px 0 #000; color: white;">Matriculated August, 2023</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="back">
+                        <img src="./assets/caninecompanionslogo.png">
+                        <h1>Lily & <br><span>Ollie</span> </h1>
+                        <p>Meet Lily and Ollie! Ollie, once a playful puppy in training, has now matriculated and is excelling in his professional role as a service dog. Guided by Lily’s dedication and care during his formative months, Ollie is making a meaningful impact in the lives of others, embodying the heart of our mission.</p>
+                        <div class="row">
+                            <button>Follow</button>
+                            <a href="https://www.instagram.com/impactfulservice/"><img src="./assets/instagram.webp" class="instagram"></a>
+                            <a href='https://www.facebook.com/people/Canine-Companions-Collar-Scholars-at-UARK/61557774277922/?_rdr'><img src="./assets/facebook.webp" class="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--Setup for "Contacts"-->
+        <section id="contact">
+            <h1 class="title">Contact</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <a href="https://hogsync.uark.edu/csua/contact-us/" target="blank">
+                        <img
+                        src="./assets/email.webp"
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                        />
+                    </a>
+                </div>
+                <div class="contact-info-container">
+                    <a href="https://www.instagram.com/collarscholars_uark/" target="blank">
+                        <img
+                        src="./assets/instagram.webp"
+                        alt="Instagram icon"
+                        class="icon contact-icon instagram-icon"
+                        />
+                    </a>
+                </div>
+                <div class="contact-info-container">
+                    <a href="https://www.facebook.com/people/Canine-Companions-Collar-Scholars-at-UARK/61557774277922/?_rdr" target="blank">
+                        <img
+                        src="./assets/facebook.webp"
+                        alt="Facebook Icon"
+                        class="icon contact-icon facebook-icon"
+                        />
+                    </a>
+                </div>
+                <div class="contact-info-container">
+                    <a href="https://hogsync.uark.edu/csua/home/" target="blank">
+                        <img
+                        src="./assets/hogsync.webp"
+                        alt="Hogsync Icon"
+                        class="icon contact-icon hogsync-icon"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <nav id="desktop-nav">
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="involved.html">Get Involved</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="raisers.html">Raisers</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Collar Scholars at the University of Arkansas. All Rights Reserved.</p>
+        </footer>
+        <!--- Links java script file to main website-->
+        <script src="script.js"> </script>
+    </body>
+</html>

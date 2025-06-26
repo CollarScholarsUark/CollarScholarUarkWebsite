@@ -1,0 +1,789 @@
+/*General */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+
+*{
+    /*Removes all generated whitespace, ensures padding/margins is ones that we want*/
+    margin: 0;
+    padding: 0;
+}
+
+/*Apply styles to the body*/
+body {
+    /*Type of font for the body*/
+    font-family: "Sanista";
+    /*backround color/image of whole page is done here*/
+}
+
+html{
+    /*scroll when navigating is smooth rather than instant*/
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/*TRANSITION for all links */
+
+a, 
+.btn {
+    transition: all 300ms ease;
+    
+}
+
+/*DESKTOP NAV*/
+
+nav, .nav-links {
+    /*Creates a box for nav links*/
+    display: flex;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    /*Whatever view height of screen, 17% of screen*/
+    height: 17vh;
+}
+
+.nav-links{
+    /*Adds gap between links*/
+    gap: 2rem;
+    /*Removes bullet points from lists*/
+    list-style: none;
+    font-size: 1.5rem;
+    margin:10px;
+}
+
+a{
+    /*Change color of links*/
+    color: blue;
+    text-decoration: none;
+    text-decoration-color:white;
+}
+
+/*Link elements display when a user hovers over them*/
+a:hover{
+    color: gold;
+    /*Adds underline under links when hovered over*/
+    text-decoration: underline;
+    /*Spaces the underline further from text*/
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(21, 21, 21);
+}
+
+.donate{
+    color: #fff;
+    text-shadow: 2px 1px 2px rgba(46, 46, 46, .3);
+    background-color: #fbb713;
+    border-color: #fbb713;
+    text-decoration: none !important;
+}
+.donate:hover{
+    color: lightgrey !important;
+}
+
+/*Name*/
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 17vh;
+}
+
+/*When person hovers over name (logo)*/
+.logo:hover{
+    /*makes the cursor remain normal when hovering*/
+    cursor: default;
+}
+
+/*HAMBURGER MENU*/
+
+#hamburger-nav{
+    /*In desktop menu, not displayed*/
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width:100%;
+    height: 2px;
+    background-color: black;
+    /*Make hamburger method turn into x when clicked*/
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links{
+    position:absolute;
+    top:100%;
+    right: 0%;
+    background-color: white;
+    width:fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
+    /*Remove bullet points*/
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+/*For the span element, when open is activated*/
+.hamburger-icon.open span:first-child{
+    /*Transforming line by rotating it into an x, move it over since it will be screwed when rotated*/
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2){
+    /*Remove line*/
+    opacity: 0;
+}
+.hamburger-icon.open span:nth-child(3){
+    /*Transforming line by rotating it into an x, move it over since it will be screwed when rotated (opposite of first span*/
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/*When open is not activated*/
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:nth-child(2){
+    opacity: 1;
+}
+.hamburger-icon span:nth-child(3){
+    transform: none;
+}
+
+/*SECTIONS*/
+
+section {
+    padding-top: 2vh;
+    height: 96vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display: flex;
+}
+
+/*PROFILE SECTION*/
+
+#profile{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 5rem;
+    height: 83vh;
+    background: linear-gradient(135deg, lightskyblue, rgb(87, 87, 238));
+    margin: 0;
+}
+
+/* Format of profile picture*/
+.section_pic-container{
+    display: flex;
+    height: 65vh;
+    width: auto;
+    margin: auto 0; 
+}
+
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p{
+    font-weight: 600;
+}
+
+.section__text_p1{
+    text-align: center;
+}
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.section__text_p3{
+    font-size: 1.5rem;
+    /*margin-bottom: 1rem;*/ 
+    align-self: center;
+    width: 35rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    margin: 0;
+}
+
+/*BUTTONS*/
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+    transition: all 300ms ease;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 40px;
+    line-height: 1.278
+
+}
+
+.btn-color-1, 
+.btn-color-2{
+    border: none;
+    color:white;
+    background-color: darkblue;
+    font-size: 2.0rem;
+    font-weight: 400;
+    font-family: "Sanista";
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover{
+    cursor: pointer;
+}
+
+.btn-color-2:hover{
+    background: darkblue;
+    color: black;
+}
+
+.btn-color-1{
+    background: #fbb713;
+    color:white;
+}
+
+.btn-color-1:hover{
+    background: darkblue;
+    border: none;
+}
+
+.btn-color-2{
+    background-color: gray;
+
+}
+
+.btn-color-2:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+.btn-container{
+    gap: 1rem;
+}
+
+/*ABOUT SECTION*/
+
+#about{
+    position:relative;
+    height: 95vh;
+    margin: 0;
+}
+
+.about-section-container {
+    display: flex;               /* Enables Flexbox */
+    height: 80%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-pic {
+    height: 65vh;                /* Maintain aspect ratio */
+    width: auto;                /* Image size */
+    flex-shrink: 0;              /* Prevent the image from shrinking */
+    border-radius: 12%;
+    margin: 15px;
+}
+.about-text{
+    display: flex;
+    justify-content: center;
+    
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/*CONTACT*/
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vh !important;
+    margin: 0;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.email-icon{
+    height: 2rem;
+    width: auto;
+    margin: .71rem;
+}
+
+.instagram-icon{
+    height: 2rem;
+    width: auto;
+    margin: .71rem;
+}
+.facebook-icon{
+    height: 3rem !important;
+    width: auto;
+    
+}
+
+.hogsync-icon{
+    height: 3rem !important;
+    width: auto;
+}
+
+
+/*FOOTER SECTION*/
+
+footer{
+    height:26vh;
+    margin: 0 1rem; 
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p{
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+/*ICON*/
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/*RAISERS*/
+
+#raiserIntro{
+    height: 40vh;
+}
+
+#raiserIntro .title{
+    padding-bottom: 1.5rem;
+}
+
+#currentRaisers, .title{
+    padding-bottom: 0;
+}
+
+#pastRaisers, .title{
+    padding-bottom: 0;
+}
+
+.intro_text_container{
+    padding-bottom: 2rem;
+}
+
+.intro_text{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    line-height: 30px;
+}
+
+.card{
+    width: 250px;
+    height:368px;
+    margin:50px auto 0;
+    perspective: 1000px;
+    display: inline-block;
+    padding-right: 7rem;
+    padding-left: 7rem;
+    padding-bottom: 10rem;
+}
+
+.card-inner{
+    width:100%;
+    height:100%;
+    position:relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+    position:absolute;
+    backface-visibility: hidden;
+}
+
+/*Raiser list. Copy for each new raiser and change backround to specified image*/
+.frontSydney{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/sydneyProfile.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.frontWhitaker{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/whitakerProfile.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.frontLily{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/lilyProfile.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.frontOllie{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/ollieProfile.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.frontStash{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/stashProfile.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.frontPoke{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/pokeProfile.png);
+    background-size: cover;
+    background-position: center;
+}
+.frontFleur{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/fleurProfile.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.front h2{
+    font-weight: 500;
+}
+
+.front p{
+    color: white;
+    font-size:13px;
+}
+
+.front button{
+    width: 120px;
+    border:1px solid #fff;
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    color:white;
+}
+
+.back{
+    background:rgb(240, 239, 239);
+    color: #333;
+    padding: 60px 40px;
+    transform: rotateY(180deg);
+}
+
+.back h1{
+    font-size: 35px;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+.back h1 span{
+    font-weight: 400;
+}
+.back p{
+    font-size: 14px;
+}
+.back p span{
+    font-weight: 600;
+}
+.back img{
+    width: 60px;
+    border-radius: 12px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.col{
+    flex: 1;
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    position: relative;
+}
+.col h2{
+    font-size: 20px;
+}
+.col::after{
+    content: '';
+    width: 1.5px;
+    height:20px;
+    background: black;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.col:last-child:after{
+    display: none;
+}
+.col p{
+    margin-top: 5px;
+}
+.back button{
+    background:black;
+    color:white;
+    border: 0;
+    outline: 0;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-right: 15px;
+    box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3);
+}
+.back a{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    background-size: cover;
+}
+.back a img{
+    width: 90%;
+}
+.card:hover .card-inner{
+    transform: translate(60px) rotateY(180deg); 
+    transform-origin: center; 
+}
+
+/*Support*/
+.donate-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 60px;
+  }
+  
+  .donate-side-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donate-container {
+    background: white;
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border: 2px solid #e0e0e0;
+    text-align: center;
+  }
+  
+  .donate-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .donate-text {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .donate-button {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .donate-button:hover {
+    background-color: #357ab8;
+  }
+/*Get Involved*/
+.info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center them if fewer than full row */
+    gap: 150px;
+    padding: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  .info-container {
+    flex: 0 1 calc(50% - 80px);
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+  
+    /* 👇 These are key for border styling */
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-title {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .info-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .info-button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .info-button:hover {
+    background-color: #357ab8;
+  }
