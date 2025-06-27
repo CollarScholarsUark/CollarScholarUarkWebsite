@@ -28,10 +28,10 @@ p {
 
 /*TRANSITION for all links */
 
-a, 
+a,
 .btn {
     transition: all 300ms ease;
-    
+
 }
 
 /*DESKTOP NAV*/
@@ -244,7 +244,7 @@ section {
 #profile {
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4)),
-                url('./assets/groupPicture.jpg') center 25% / cover no-repeat;
+                 url('./assets/groupPicture.jpg') center 25% / cover no-repeat;
     /* background: url('./assets/groupPicture.jpg') center 25% / cover no-repeat; */
     color: white;
     height: 100vh;
@@ -280,7 +280,7 @@ section {
     display: flex;
     height: 65vh;
     width: auto;
-    margin: auto 0; 
+    margin: auto 0;
 }
 
 .section__text{
@@ -303,7 +303,7 @@ section {
 
 .section__text_p3{
     font-size: 1.5rem;
-    /*margin-bottom: 1rem;*/ 
+    /*margin-bottom: 1rem;*/
     align-self: center;
     width: 35rem;
 }
@@ -334,24 +334,24 @@ section {
     font-weight: 600;
     letter-spacing: 0.5px;
   }
-  
+
   /* Blue button */
   .btn-color-1 {
     background-color: #0052cc; /* UA deep blue */
     color: white;
   }
-  
+
   .btn-color-1:hover {
     background-color: #003d99;
     transform: translateY(-2px);
   }
-  
+
   /* Yellow button */
   .btn-color-2 {
     background-color: #ffc400; /* UA yellow */
     color: white;
   }
-  
+
   .btn-color-2:hover {
     background-color: #e0ac00;
     transform: translateY(-2px);
@@ -415,7 +415,7 @@ section {
 
 
 .about-section-container {
-    display: flex;               /* Enables Flexbox */
+    display: flex;             /* Enables Flexbox */
     height: 80%;
     max-width: fit-content;
     margin-left: auto;
@@ -423,16 +423,16 @@ section {
 }
 
 .about-pic {
-    height: 65vh;                /* Maintain aspect ratio */
-    width: auto;                /* Image size */
-    flex-shrink: 0;              /* Prevent the image from shrinking */
+    height: 65vh;             /* Maintain aspect ratio */
+    width: auto;             /* Image size */
+    flex-shrink: 0;             /* Prevent the image from shrinking */
     border-radius: 12%;
     margin: 15px;
 }
 .about-text{
     display: flex;
     justify-content: center;
-    
+
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -501,7 +501,7 @@ section {
 .facebook-icon{
     height: 3rem !important;
     width: auto;
-    
+
 }
 
 .hogsync-icon{
@@ -514,7 +514,7 @@ section {
 
 footer{
     height:26vh;
-    margin: 0 1rem; 
+    margin: 0 1rem;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -547,7 +547,7 @@ footer p{
     box-shadow: 0 6px 20px rgba(252, 182, 159, 0.3);
     min-height: 40vh;
   }
-  
+
   #raiserIntro .title {
     font-size: 3rem;
     color: #333;
@@ -557,7 +557,7 @@ footer p{
     animation: fadeSlideUp 1s ease forwards;
     opacity: 0;
   }
-  
+
   .intro_text_container {
     max-width: 900px;
     margin: 0 auto 2rem auto;
@@ -565,7 +565,7 @@ footer p{
     animation-delay: 0.3s;
     opacity: 0;
   }
-  
+
   .intro_text {
     font-size: 1.25rem;
     line-height: 1.6;
@@ -575,7 +575,7 @@ footer p{
     text-shadow: 0 1px 1px rgba(255 255 255 / 0.9);
     margin: 0 2rem;
   }
-  
+
   /* Buttons container */
   #raiserIntro .btn-container {
     display: flex;
@@ -585,7 +585,7 @@ footer p{
     animation-delay: 0.6s;
     opacity: 0;
   }
-  
+
   /* Pulsing glowing buttons */
   #raiserIntro .btn {
     font-size: 1.2rem;
@@ -599,16 +599,14 @@ footer p{
     position: relative;
     overflow: hidden;
   }
-  
+
   /* Become a Raiser button - coral orange with glow */
 
 
-  
   /* Support Raisers button - soft blue with glow */
 
-  
   /* Animations */
-  
+
   @keyframes fadeSlideUp {
     0% {
       opacity: 0;
@@ -619,7 +617,7 @@ footer p{
       transform: translateY(0);
     }
   }
-  
+
   @keyframes pulseGlow {
     0%, 100% {
       box-shadow: 0 0 15px #ff6f61;
@@ -628,7 +626,7 @@ footer p{
       box-shadow: 0 0 30px #ff6f61;
     }
   }
-  
+
   @keyframes pulseGlowBlue {
     0%, 100% {
       box-shadow: 0 0 15px #4a90e2;
@@ -637,7 +635,7 @@ footer p{
       box-shadow: 0 0 30px #4a90e2;
     }
   }
-  
+
 /* --------- */
 
 
@@ -855,8 +853,8 @@ footer p{
     width: 90%;
 }
 .card:hover .card-inner{
-    transform: translate(60px) rotateY(180deg); 
-    transform-origin: center; 
+    transform: translate(60px) rotateY(180deg);
+    transform-origin: center;
 }
 
 /*Support*/
@@ -870,7 +868,7 @@ footer p{
     animation: fadeIn 0.8s ease-out;
     background: linear-gradient(135deg, #dbeeff, #ffffff);
   }
-  
+
   .donate-side-image {
     max-width: 500px;
     width: 100%;
@@ -878,7 +876,7 @@ footer p{
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   }
-  
+
   .donate-container {
     background: white;
     border-radius: 20px;
@@ -888,19 +886,19 @@ footer p{
     border: 2px solid #e0e0e0;
     text-align: center;
   }
-  
+
   .donate-title {
     font-size: 2.5rem;
     margin-bottom: 15px;
   }
-  
+
   .donate-text {
     font-size: 1.2rem;
     margin-bottom: 35px;
     line-height: 1.6;
     color: #555;
   }
-  
+
   .donate-button {
     display: inline-block;
     background-color: #4a90e2;
@@ -915,7 +913,7 @@ footer p{
     margin-left: 10px;
     margin-right: 10px;
   }
-  
+
   .donate-button:hover {
     background-color: #357ab8;
   }
@@ -926,9 +924,9 @@ footer p{
     gap: 3rem;
     padding: 4rem 2rem;
     background: linear-gradient(135deg, #f5faff, #ffffff);
-    
+
   }
-  
+
   .info-container {
     background-color: #ffffff;
     border-radius: 20px;
@@ -940,26 +938,26 @@ footer p{
     margin-bottom: 75px;
     animation: fadeIn 0.8s ease-out;
   }
-  
+
   .info-container:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   }
-  
+
   .info-title {
     font-size: 1.75rem;
     margin-bottom: 1rem;
     color: #003d80;
     font-weight: 700;
   }
-  
+
   .info-text {
     font-size: 1rem;
     color: #444;
     margin-bottom: 1.5rem;
     line-height: 1.6;
   }
-  
+
   .info-button {
     padding: 12px 24px;
     background-color: #0053ba;
@@ -971,7 +969,7 @@ footer p{
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
-  
+
   .info-button:hover {
     background-color: #003f91;
     transform: scale(1.03);
@@ -984,7 +982,7 @@ footer p{
     padding: 60px 20px;
     background: linear-gradient(135deg, #dbeeff, #ffffff);
   }
-  
+
   .events-wrapper {
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(12px);
@@ -997,19 +995,19 @@ footer p{
     text-align: center;
     animation: fadeIn 0.8s ease-out;
   }
-  
+
   .events-title {
     font-size: 2.5rem;
     margin-bottom: 15px;
     color: #003366;
   }
-  
+
   .events-description {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #333;
   }
-  
+
   .calendar-container {
     border-radius: 16px;
     overflow: hidden;
@@ -1017,18 +1015,18 @@ footer p{
     box-shadow: 0 4px 24px rgba(74, 144, 226, 0.3);
     transition: transform 0.3s ease;
   }
-  
+
   .calendar-container:hover {
     transform: scale(1.01);
     box-shadow: 0 6px 28px rgba(74, 144, 226, 0.4);
   }
-  
+
   .calendar-container iframe {
     width: 100%;
     height: 600px;
     border: none;
   }
-  
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -1039,17 +1037,415 @@ footer p{
       transform: translateY(0);
     }
   }
-  
-  @media (max-width: 850px) {
+
+/* --- Media Queries for Mobile Responsiveness --- */
+
+/* For screens smaller than 768px (common tablet/mobile breakpoint) */
+@media screen and (max-width: 768px) {
+    /* Navigation Bar */
+    .pretty-nav {
+        height: 10vh; /* Adjust height for smaller screens */
+        padding: 0 2%; /* Reduce horizontal padding */
+    }
+
+    .nav-logo {
+        gap: 0.5rem; /* Reduce gap between logo and title */
+    }
+
+    .nav-logo img {
+        height: 40px; /* Smaller logo for mobile */
+    }
+
+    .nav-title {
+        font-size: 1.5rem; /* Smaller title font size */
+    }
+
+    .nav-links {
+        display: none; /* Hide desktop nav links on mobile */
+    }
+
+    #hamburger-nav {
+        display: flex; /* Show hamburger menu on mobile */
+    }
+
+    /* Profile Section */
+    #profile {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 2rem 1rem; /* Adjust padding */
+        justify-content: flex-start; /* Align content to the top */
+    }
+
+    .section_pic-container {
+        height: 40vh; /* Adjust image height for mobile */
+        margin-bottom: 2rem; /* Add some space below the image */
+    }
+
+    .section__text_p2 {
+        font-size: 1.25rem; /* Smaller subtitle font size */
+        margin-bottom: 1rem;
+    }
+
+    .section__text_p3 {
+        font-size: 1rem; /* Smaller description font size */
+        width: 100%; /* Full width for text on mobile */
+        padding: 0 1rem; /* Add padding to prevent text from touching edges */
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
+
+    .title {
+        font-size: 2.2rem; /* Smaller main title font size */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .landing-title {
+        font-size: 2.5rem; /* Adjust landing title for mobile */
+    }
+
+    .landing-subtitle {
+        font-size: 1.1rem; /* Adjust landing subtitle for mobile */
+    }
+
+    .landing-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem;
+    }
+
+    .landing-btn {
+        width: 90%; /* Make buttons wider */
+        margin: 0 auto; /* Center buttons */
+    }
+
+    /* About Section */
+    #about {
+        height: auto; /* Allow height to adjust */
+        padding-bottom: 4rem; /* Add bottom padding */
+    }
+
+    .about-section-container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items */
+        padding: 0 1rem; /* Add horizontal padding */
+    }
+
+    .about-pic {
+        height: 45vh; /* Adjust image height for mobile */
+        margin: 1rem 0; /* Adjust margin */
+    }
+
+    .about-text {
+        max-width: 100%; /* Allow text to take full width */
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .details-container {
+        width: 90%; /* Adjust width for better fit on mobile */
+        margin: 1rem auto; /* Center containers */
+    }
+
+    /* Contact Section */
+    #contact {
+        height: auto !important; /* Allow height to adjust for content */
+        padding: 2rem 0; /* Add top/bottom padding */
+    }
+
+    .contact-info-upper-container {
+        flex-direction: column; /* Stack contact info vertically */
+        padding: 1rem;
+        width: 90%; /* Adjust width */
+    }
+
+    .contact-info-container {
+        flex-direction: column; /* Stack icon and text */
+        gap: 0.5rem;
+        margin-bottom: 1rem; /* Add space between contact items */
+    }
+
+    .email-icon,
+    .instagram-icon,
+    .facebook-icon,
+    .hogsync-icon {
+        height: 2.5rem !important; /* Adjust icon sizes */
+        margin: 0;
+    }
+
+    .contact-info-container p {
+        font-size: 1rem; /* Smaller font size for contact text */
+    }
+
+    /* Footer */
+    footer {
+        height: auto; /* Allow footer height to adjust */
+        padding: 1rem 0;
+    }
+
+    footer p {
+        font-size: 0.7rem; /* Increase font size for readability */
+    }
+
+    /* Raisers Section (Intro) */
+    #raiserIntro {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+
+    #raiserIntro .title {
+        font-size: 2.2rem;
+    }
+
+    .intro_text_container {
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .intro_text {
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+
+    #raiserIntro .btn-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #raiserIntro .btn {
+        width: 90%;
+        font-size: 1rem;
+        padding: 0.6rem 2rem;
+    }
+
+    /* Raiser Cards (unchanged functionality, but layout adjustment) */
+    .card {
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 5rem; /* Reduce bottom padding */
+        margin-left: auto;
+        margin-right: auto;
+        display: block; /* Stack cards vertically */
+    }
+
+    /* Support Page */
+    .donate-page-wrapper {
+        padding: 30px 15px;
+        flex-direction: column; /* Stack image and content vertically */
+    }
+
+    .donate-side-image {
+        max-width: 90%; /* Make image take more width */
+    }
+
+    .donate-container {
+        padding: 30px 20px;
+        width: 90%; /* Adjust width */
+    }
+
+    .donate-title {
+        font-size: 2rem;
+    }
+
+    .donate-text {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .donate-button {
+        padding: 12px 20px;
+        font-size: 1rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /* Get Involved Page */
+    .info-wrapper {
+        grid-template-columns: 1fr; /* Single column for containers */
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .info-container {
+        padding: 2rem;
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .info-title {
+        font-size: 1.5rem;
+    }
+
+    .info-text {
+        font-size: 0.95rem;
+    }
+
+    .info-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Events Page */
+    .events-page {
+        padding: 30px 15px;
+    }
+
+    .events-wrapper {
+        padding: 30px 20px;
+    }
+
     .events-title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .events-description {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
+
     .calendar-container iframe {
-      height: 500px;
+        height: 400px; /* Reduce iframe height for smaller screens */
     }
-  }
+}
+
+/* For even smaller screens (e.g., small phones) */
+@media screen and (max-width: 480px) {
+    /* General adjustments */
+    body {
+        font-size: 14px; /* Slightly smaller base font size */
+    }
+
+    .pretty-nav {
+        padding: 0 1rem;
+    }
+
+    .nav-logo img {
+        height: 35px;
+    }
+
+    .nav-title {
+        font-size: 1.3rem;
+    }
+
+    .menu-links a {
+        font-size: 1.2rem;
+    }
+
+    .section__text_p2 {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .landing-title {
+        font-size: 2rem;
+    }
+
+    .landing-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    /* About Section */
+    .about-pic {
+        height: 35vh;
+    }
+
+    .details-container {
+        padding: 1rem;
+    }
+
+    /* Contact Section */
+    .contact-info-upper-container {
+        margin: 1rem auto;
+    }
+
+    .contact-info-container {
+        margin-bottom: 0.5rem;
+    }
+
+    .email-icon,
+    .instagram-icon,
+    .facebook-icon,
+    .hogsync-icon {
+        height: 2rem !important;
+    }
+
+    /* Raiser Cards */
+    .card {
+        width: 90%; /* Make cards take more width on very small screens */
+        padding-bottom: 3rem;
+        margin: 30px auto 0;
+    }
+
+    .card:hover .card-inner{
+        transform: translate(0) rotateY(180deg); /* Adjust transform for stacked cards */
+    }
+
+    /* Support Section */
+    .donate-page-wrapper {
+        padding: 20px 10px;
+    }
+
+    .donate-container {
+        padding: 25px 15px;
+    }
+
+    .donate-title {
+        font-size: 1.8rem;
+    }
+
+    .donate-text {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .donate-button {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+
+    /* Get Involved Section */
+    .info-container {
+        padding: 1.5rem;
+    }
+
+    .info-title {
+        font-size: 1.3rem;
+    }
+
+    .info-text {
+        font-size: 0.85rem;
+    }
+
+    .info-button {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+    }
+
+    /* Events Section */
+    .events-page {
+        padding: 20px 10px;
+    }
+
+    .events-wrapper {
+        padding: 25px 15px;
+    }
+
+    .events-title {
+        font-size: 1.8rem;
+    }
+
+    .events-description {
+        font-size: 0.9rem;
+    }
+
+    .calendar-container iframe {
+        height: 300px;
+    }
+}
