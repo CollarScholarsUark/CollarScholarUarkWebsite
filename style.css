@@ -151,7 +151,7 @@ a:hover{
 
 .hamburger-menu {
     position: relative;
-    display: inline-block;
+    z-index: 1000;
 }
 
 .hamburger-icon{
@@ -171,15 +171,19 @@ a:hover{
     transition: all 0.3 ease-in-out;
 }
 
-.menu-links{
-    position:absolute;
-    top:100%;
-    right: 0%;
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
     background-color: white;
-    width:fit-content;
+    width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    /* Add these 👇 */
+    z-index: 999;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu-links a{
@@ -1064,8 +1068,14 @@ footer p{
         display: none; /* Hide desktop nav links on mobile */
     }
 
+    #desktop-nav {
+        display: none;
+    }
     #hamburger-nav {
-        display: flex; /* Show hamburger menu on mobile */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
     }
 
     /* Profile Section */
@@ -1151,7 +1161,7 @@ footer p{
     }
 
     .contact-info-upper-container {
-        flex-direction: column; /* Stack contact info vertically */
+        flex-direction: row; /* Stack contact info vertically */
         padding: 1rem;
         width: 90%; /* Adjust width */
     }
@@ -1162,13 +1172,13 @@ footer p{
         margin-bottom: 1rem; /* Add space between contact items */
     }
 
-    .email-icon,
+    /* .email-icon,
     .instagram-icon,
     .facebook-icon,
     .hogsync-icon {
-        height: 2.5rem !important; /* Adjust icon sizes */
+        height: 2.5rem !important; 
         margin: 0;
-    }
+    } */
 
     .contact-info-container p {
         font-size: 1rem; /* Smaller font size for contact text */
@@ -1361,7 +1371,7 @@ footer p{
     }
 
     /* Contact Section */
-    .contact-info-upper-container {
+    /* .contact-info-upper-container {
         margin: 1rem auto;
     }
 
@@ -1374,12 +1384,13 @@ footer p{
     .facebook-icon,
     .hogsync-icon {
         height: 2rem !important;
-    }
+    } */
 
     /* Raiser Cards */
     .card {
         width: 90%; /* Make cards take more width on very small screens */
-        padding-bottom: 3rem;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
         margin: 30px auto 0;
     }
 
