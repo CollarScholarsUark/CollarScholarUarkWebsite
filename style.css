@@ -724,6 +724,16 @@ footer p{
     background-size: cover;
     background-position: center;
 }
+.frontRocket{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/rocketProfile.png);
+    background-size: cover;
+    background-position: center;
+}
 
 .frontStash{
     padding: 60px 40px;
@@ -1127,6 +1137,7 @@ footer p{
     }
 
     /* About Section */
+/* About Section */
     #about {
         height: auto; /* Allow height to adjust */
         padding-bottom: 4rem; /* Add bottom padding */
@@ -1138,15 +1149,17 @@ footer p{
         padding: 0 1rem; /* Add horizontal padding */
     }
 
-    .about-pic {
-        height: 45vh; /* Adjust image height for mobile */
-        margin: 1rem 0; /* Adjust margin */
-    }
-
     .about-text {
+        order: -1; /* This makes the text appear first (on top) */
         max-width: 100%; /* Allow text to take full width */
         padding: 0 1rem;
         box-sizing: border-box;
+    }
+
+    .about-pic {
+        order: 1; /* This makes the picture appear after the text (on bottom) */
+        height: 45vh; /* Adjust image height for mobile */
+        margin: 1rem 0; /* Adjust margin */
     }
 
     .details-container {
