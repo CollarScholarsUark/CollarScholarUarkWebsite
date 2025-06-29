@@ -1139,8 +1139,8 @@ footer p{
     /* About Section */
 /* About Section */
     #about {
-        height: auto; /* Allow height to adjust */
-        padding-bottom: 4rem; /* Add bottom padding */
+        height: auto;
+        padding-bottom: 0rem; /* Add bottom padding */
     }
 
     .about-section-container {
