@@ -1198,6 +1198,7 @@ footer p{
         flex-direction: row; /* Stack contact info vertically */
         padding: 1rem;
         width: 90%; /* Adjust width */
+        /*Extra Comment*/
     }
 
     .contact-info-container {
