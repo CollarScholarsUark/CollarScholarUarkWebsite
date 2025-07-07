@@ -261,6 +261,7 @@ section {
     box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.6);
     overflow: hidden;
 }
+
 /* Fade-slide animation */
 @keyframes fadeInSlide {
     0% {
@@ -352,7 +353,7 @@ section {
 
   /* Yellow button */
   .btn-color-2 {
-    background-color: #ffc400; /* UA yellow */
+    background-color: #FFD166; /* UA yellow */
     color: white;
   }
 
@@ -385,7 +386,7 @@ section {
     gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
-    animation: fadeInSlide 1.4s ease-out forwards;
+    animation: fadeInSlide 1.4s ease-out forwards; 
 }
 
 .landing-btn {
@@ -400,7 +401,6 @@ section {
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     animation: buttonPop 0.5s ease-out 1.6s forwards;
-    opacity: 0;
     transform: scale(0.95);
     animation-fill-mode: forwards;
 }
@@ -548,7 +548,7 @@ footer p{
     justify-content: flex-start; /* Pull content to the top */
     background: linear-gradient(135deg, #dbeeff, #ffffff);
     border-radius: 2rem;
-    box-shadow: 0 6px 20px rgba(252, 182, 159, 0.3);
+    /*box-shadow: 0 6px 20px rgba(252, 182, 159, 0.3);*/
     min-height: 40vh;
   }
 
@@ -867,7 +867,7 @@ footer p{
     width: 90%;
 }
 .card:hover .card-inner{
-    transform: translate(60px) rotateY(180deg);
+    transform: translate(70px) rotateY(180deg);
     transform-origin: center;
 }
 
@@ -1129,12 +1129,32 @@ footer p{
     .landing-buttons {
         flex-direction: column; /* Stack buttons vertically */
         gap: 1rem;
+        opacity: 1;
+        
     }
 
     .landing-btn {
-        width: 90%; /* Make buttons wider */
-        margin: 0 auto; /* Center buttons */
+        background-color: #FFD166;
+        border: none;
+        color: #222;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 2rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        
+        transform: scale(0.95);
+        animation: buttonPop 0.5s ease-out 1.6s forwards;
+        animation-fill-mode: forwards; /* This makes sure the 100% state sticks */
+
+        /* Keep existing styles */
+        opacity: 1 !important; /* Force it to be visible */
+        animation: none !important; /* Temporarily disable the animation */
+    /* REMOVE THIS LINE AFTER TESTING: animation-fill-mode: forwards; */
     }
+
 
     /* About Section */
 /* About Section */
@@ -1154,6 +1174,7 @@ footer p{
         max-width: 100%; /* Allow text to take full width */
         padding: 0 1rem;
         box-sizing: border-box;
+        text-align: center;
     }
 
     .about-pic {
@@ -1237,14 +1258,40 @@ footer p{
         padding: 0.6rem 2rem;
     }
 
-    /* Raiser Cards (unchanged functionality, but layout adjustment) */
+    /* Media Query Raiser Cards (unchanged functionality, but layout adjustment) */
+    #currentRaisers, #pastRaisers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem;
+    }
     .card {
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 5rem; /* Reduce bottom padding */
-        margin-left: auto;
-        margin-right: auto;
-        display: block; /* Stack cards vertically */
+        width: 100%;
+        max-width: 300px;
+        height: 368px;
+        margin: 1rem auto;
+        perspective: 1000px;
+        display: block;
+        padding: 0;
+    }
+    
+    .card-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        box-sizing: border-box;
+    }
+    
+    .front, .back {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        position: absolute;
+        backface-visibility: hidden;
+        box-sizing: border-box;
     }
 
     /* Support Page */
@@ -1331,7 +1378,9 @@ footer p{
     body {
         font-size: 14px; /* Slightly smaller base font size */
     }
-
+    #raisers{
+        height: auto;
+    }
     .pretty-nav {
         padding: 0 1rem;
     }
@@ -1401,7 +1450,7 @@ footer p{
 
     /* Raiser Cards */
     .card {
-        width: 90%; /* Make cards take more width on very small screens */
+        width: 95%; /* Make cards take more width on very small screens */
         padding-bottom: 5rem;
         padding-top: 5rem;
         margin: 30px auto 0;
@@ -1471,5 +1520,41 @@ footer p{
 
     .calendar-container iframe {
         height: 300px;
+    }
+    .intro_text_container {
+        max-width: 900px;
+        margin: 0 auto 2rem auto;
+        animation: fadeSlideUp 1.3s ease forwards;
+        animation-delay: 0.3s;
+        opacity: 0;
+        padding-bottom: 2rem;
+      }
+      .card-logo{
+        display: none;
+      }
+      .back{
+        height: fit-content;
+      }
+
+      .landing-title {
+        font-size: 2rem; /* Further reduce title size */
+        padding: 0 0.5rem; /* Reduce padding slightly */
+    }
+
+    .landing-subtitle {
+        font-size: 1rem; /* Further reduce subtitle size */
+        padding: 0 0.5rem; /* Reduce padding slightly */
+    }
+
+    .landing-btn {
+        width: 95%; /* Even wider buttons */
+    }
+    #raiserIntro {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+    #currentRaisers{
+        padding-top:15rem;
+        padding-bottom: 0rem;
     }
 }
