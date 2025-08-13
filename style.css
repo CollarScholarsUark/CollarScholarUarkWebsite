@@ -741,7 +741,7 @@ footer p{
     flex-direction: column;
     justify-content: flex-end;
     color:#fff;
-    background:url(assets/stashProfile.png);
+    background:url(assets/stashProfile.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -752,7 +752,7 @@ footer p{
     flex-direction: column;
     justify-content: flex-end;
     color:#fff;
-    background:url(assets/pokeProfile.png);
+    background:url(assets/pokeProfile.jpg);
     background-size: cover;
     background-position: center;
 }
