@@ -687,7 +687,7 @@ footer p{
     flex-direction: column;
     justify-content: flex-end;
     color:#fff;
-    background:url(assets/chiaProfile.png);
+    background:url(assets/chiaProfile.PNG);
     background-size: cover;
     background-position: center;
 }
