@@ -681,35 +681,35 @@ footer p{
 }
 
 /*Raiser list. Copy for each new raiser and change backround to specified image*/
-.frontSydney{
+.frontChia{
     padding: 60px 40px;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
     color:#fff;
-    background:url(assets/sydneyProfile.png);
+    background:url(assets/chiaProfile.png);
     background-size: cover;
     background-position: center;
 }
 
-.frontWhitaker{
+.frontCarina{
     padding: 60px 40px;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
     color:#fff;
-    background:url(assets/whitakerProfile.jpg);
+    background:url(assets/carinaProfile.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.frontLily{
+.frontKlancy{
     padding: 60px 40px;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
     color:#fff;
-    background:url(assets/lilyProfile.jpg);
+    background:url(assets/klancyProfile.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -745,6 +745,16 @@ footer p{
     background-size: cover;
     background-position: center;
 }
+.frontTiki{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/tikiProfile.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 .frontPoke{
     padding: 60px 40px;
@@ -763,6 +773,17 @@ footer p{
     justify-content: flex-end;
     color:#fff;
     background:url(assets/fleurProfile.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.frontRainbow{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/rainbowProfile.jpg);
     background-size: cover;
     background-position: center;
 }
