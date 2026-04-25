@@ -687,7 +687,7 @@ footer p{
     flex-direction: column;
     justify-content: flex-end;
     color:#fff;
-    background:url(assets/chiaProfile.PNG);
+    background:url(assets/chiaProfile.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -784,6 +784,17 @@ footer p{
     justify-content: flex-end;
     color:#fff;
     background:url(assets/rainbowProfile.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.frontYang{
+    padding: 60px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#fff;
+    background:url(assets/yangProfile.jpg);
     background-size: cover;
     background-position: center;
 }
