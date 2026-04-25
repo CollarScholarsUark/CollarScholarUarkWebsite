@@ -844,10 +844,13 @@ footer p{
     width: 60px;
     border-radius: 12px;
 }
-.row{
+.row {
     display: flex;
     align-items: center;
+    justify-content: center; /* Centers the "Follow" button and icons */
+    gap: 15px; /* Replaces clunky margins for spacing */
     margin-top: 30px;
+    width: 100%;
 }
 .col{
     flex: 1;
@@ -885,18 +888,26 @@ footer p{
     margin-right: 15px;
     box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3);
 }
-.back a{
+.back a {
+    display: flex; /* THIS IS THE MAGIC FIX */
+    align-items: center;
+    justify-content: center;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    justify-content: center;
-    margin: 0 5px;
-    background-size: cover;
+    background-color: white; /* Gives the icons a clean background */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover prep */
+    margin: 0; /* Removed margin because we are using 'gap' in .row now */
 }
-.back a img{
-    width: 90%;
+.back a img {
+    width: 65%; /* Scaled down slightly so it doesn't touch the edges */
+    height: auto;
+    object-fit: contain;
+}
+.back a:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 .card:hover .card-inner{
     transform: translate(70px) rotateY(180deg);
@@ -1291,22 +1302,26 @@ footer p{
         padding: 0.6rem 2rem;
     }
 
-    /* Media Query Raiser Cards (unchanged functionality, but layout adjustment) */
+    /* Container for the cards to keep them centered and responsive */
+    /* The Ultimate CSS Grid Container */
     #currentRaisers, #pastRaisers {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        padding: 2rem;
+        display: grid;
+        /* This tells the grid to fit as many 280px columns as possible */
+        grid-template-columns: repeat(auto-fit, 280px); 
+        justify-content: center; /* Centers the entire grid block on the page */
+        gap: 3rem; /* Perfect, uniform spacing between rows and columns */
+        padding: 2rem 5%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
+
+    /* The card itself */
     .card {
         width: 100%;
-        max-width: 300px;
-        height: 368px;
-        margin: 1rem auto;
+        max-width: 320px; /* Slightly larger on mobile */
+        height: 420px;
+        margin: 0 auto; /* Keeps it perfectly centered */
         perspective: 1000px;
-        display: block;
-        padding: 0;
     }
     
     .card-inner {
